@@ -4,36 +4,35 @@ It can be used to submit data to a different domain, which is not possible with 
 examples:
 #Example 1 -  Get Request
 
-$.asyncForm(
+	$.asyncForm(
 		 {
-		 	action:'google.com',
-		 	params:{
+		 	action: 'google.com',
+		 	params: {
 			 	param1 : value1,
 			 	param2 : value2
 		 	},
 		 	
 		 	method:'get',
 		 	
-		 	onLoadFinished:function(response) {
+		 	onLoadFinished: function(response) {
 			 	console.log(response);
 		 	}
 			 
-});
-
+	});
 #Example 2 - Post Request 
 
-$.asyncForm(
+	$.asyncForm(
 		 {
 		 	action:'google.com',
-		 	params:{
+		 	params: {
 			 	param1 : value1,
 			 	param2 : value2
 		 	},
 		 	
 		 	method:'post',
 		 	
-		 	onLoadFinished:function(response) {
+		 	onLoadFinished: function(response) {
 			 	console.log(response);
 		 	}
 			 
-});
+	});
